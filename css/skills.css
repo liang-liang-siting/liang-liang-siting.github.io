@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #e7dfd8;
+    color:#654f3a;
+}
+
+@media  (min-width: 600px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        color: #8b7d71;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #b7a99e; 
+        transition: background-color 0.3s;
+    }
+}
+
+.navbar-title {
+    margin: 0;
+    color: #654f3a;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s; 
+}
+
+.navbar a:hover {
+    background-color: #857d7d;
+    font-size: 20px;
+}
+
+.navbar a.active {
+    background-color: grey;
+}
+
+a:link, a:visited {
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 100px;
+}
+
+.title-section {
+    width: 35%;
+}
+
+.skills-section {
+    width: 65%;
+    /* background-color: #fbcbd3;  */
+    background-color: #b7a99e;
+    padding: 100px;
+    border-radius: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-list {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.skill {
+    margin-bottom: 8px;
+}
+
+.empty-space {
+    margin-bottom: 300px; 
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #b7a99e;
+        color: #8b7d71;
+        text-align: center;
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navbar-title {
+        display: none;
+    }
+
+    .navbar a {
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s; 
+    }
+    
+    .navbar a:hover {
+        background-color: #857d7d;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column; 
+        margin-top: 10px;
+        padding: 10px; 
+    }
+    
+    .title-section {
+        width: 100%; 
+        text-align: center; 
+
+    }
+    
+    .skills-section {
+        width: 100%; 
+        background-color: #b7a99e;
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 20px; 
+        margin-bottom: 50px;
+    }
+    
+    .empty-space {
+        margin-bottom: 10px; 
+    }
+}

@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #e7dfd8;
+}
+
+@media  (min-width: 600px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        color: #8b7d71;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #b7a99e; 
+        transition: background-color 0.3s;
+    }
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s; 
+}
+
+.navbar-title {
+    margin: 0;
+    color: #654f3a;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a:hover {
+    background-color: #857d7d;
+    font-size: 20px;
+}
+
+.navbar a.active {
+    background-color: grey;
+}
+
+a:link, a:visited {
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 46px;
+    color: #654f3a;
+    margin-bottom: 15px;
+    margin-right: 70px;
+}
+
+p {
+    color: #654f3a;
+}
+
+.mainClass {
+    padding: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+      
+.introduction {
+    width: 50%;
+}
+
+span {
+    color: #281f15; 
+    font-weight: bold; 
+    font-style: italic;
+}
+
+.introduction ul {
+    list-style-type: square;
+    padding: 30px;
+    color: #654f3a;
+}
+
+.introduction li {
+    margin-bottom: 8px;
+}
+
+.picture {
+    width: 45%;
+    margin-top: 50px;
+}
+      
+.picture img {
+    width: 85%;
+    height: 85%;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #b7a99e;
+        color: #8b7d71;
+        text-align: center;
+        padding: 15px;
+        z-index: 2;
+    }
+
+    .navbar-title {
+        display: none;
+    }
+
+    .navbar a {
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s; 
+    }
+    
+    .navbar a:hover {
+        background-color: #857d7d;
+        font-size: 16px;
+    }
+
+    .mainClass {
+        display: inline-block;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .mainClass {
+        padding: 20px;
+        margin-top: 40px; 
+    }
+
+    .picture img {
+        width: 100%;
+        height: auto;
+    }
+
+    .introduction {
+        width: 100%;
+    }
+        
+    .picture {
+        width: 100%;
+    }
+}

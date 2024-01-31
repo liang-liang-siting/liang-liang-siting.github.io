@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #e7dfd8;
+}
+
+@media  (min-width: 600px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        color: #8b7d71;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #b7a99e; 
+        transition: background-color 0.3s;
+    }
+}
+
+.navbar-title {
+    margin: 0;
+    color: #654f3a;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s; 
+}
+
+.navbar a:hover {
+    background-color: #857d7d;
+    font-size: 20px;
+}
+
+.navbar a.active {
+    background-color: grey;
+}
+
+a:link, a:visited {
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 36px;
+    margin-left: 55px;
+    color: #654f3a;
+    font-weight: normal;
+}
+
+h2,h3 {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-left: 55px;
+    color: #654f3a;
+    font-weight: normal;
+}
+
+.empty-space {
+    margin-bottom: 165px; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #654f3a;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #b7a99e;
+        color: #8b7d71;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .navbar-title {
+        display: none;
+    }
+
+    .navbar a {
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s; 
+    }
+    
+    .navbar a:hover {
+        background-color: #857d7d;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .empty-space {
+        margin-bottom: 20px; 
+    }
+}
