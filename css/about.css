@@ -81,6 +81,7 @@ h3, p {
     text-align: center;
     padding: 15px;
     box-sizing: border-box;
+    margin-left: 20px; 
 }
 
 .ed-detail-content {
