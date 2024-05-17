@@ -64,14 +64,12 @@ p {
 }
 
 .title-section {
-    grid-area: menu;
     width: 35%;
     margin-top: 40px;
     margin-left: 60px;
 }
 
 .project-section {
-    grid-area: main;
     width: 65%;
     padding: 100px; 
     margin-top: 60px;
