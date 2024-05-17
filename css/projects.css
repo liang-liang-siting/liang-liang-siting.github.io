@@ -63,11 +63,6 @@ p {
     color: #654f3a;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-areas: "header header header" "menu main main";
-}
-
 .title-section {
     grid-area: menu;
     width: 35%;
