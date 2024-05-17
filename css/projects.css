@@ -79,20 +79,20 @@ p {
 .project-section {
     grid-area: main;
     width: 70%;
-    padding: 20px; /* Adjust padding */
+    padding: 20px; /
     margin-top: 60px;
     background-color: #b7a99e; 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust column size as needed */
-    gap: 20px; /* Adjust gap between project boxes */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 20px; 
 }
 
 .project-box {
     width: 100%;
-    padding-top: 100%; /* Set aspect ratio for square */
+    padding-top: 100%; 
     position: relative;
     overflow: hidden;
-    border-radius: 20px; /* Make it a square */
+    border-radius: 20px; 
     transition: transform 0.3s;
     color: #654f3a;
 }
@@ -104,9 +104,8 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px; /* Make it a square */
+    border-radius: 20px; 
 }
-
 
 .project-box:hover {
     transform: scale(1.1);
@@ -122,6 +121,15 @@ p {
     font-size: 12px;
     font-weight: bold;
     background-color:  white;
+}
+
+.project-box .title a {
+    color: #654f3a;
+    text-decoration: none;
+}
+
+.project-box .title a:hover {
+    color: #857d7d;
 }
 
 @media only screen and (max-width: 600px) {
