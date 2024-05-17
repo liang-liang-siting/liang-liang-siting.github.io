@@ -65,8 +65,8 @@ p {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 70px; /* Adjust this value to fit your layout */
+    justify-content: center; 
+    padding-top: 120px; 
 }
 
 .title-section {
@@ -81,7 +81,7 @@ p {
     flex: 0 0 60%;
     padding: 15px;
     width: 65%;
-    margin-top: 60px;
+    margin-top: 0;
     background-color: #b7a99e;
     display: flex;
     flex-wrap: wrap;
