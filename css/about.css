@@ -76,7 +76,7 @@ h3, p {
 
 .education-title,
 .work-experience-title {
-    flex: 0 0 3%;
+    flex: 0 0 30%;
     color: #654f3a;
     text-align: center;
     padding: 15px;
