@@ -1,3 +1,5 @@
+/* styles.css */
+
 body {
     margin: 0;
     font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -78,17 +80,17 @@ p {
 .project-section {
     grid-area: main;
     width: 70%;
-    padding: 20px; /* Adjust padding */
+    padding: 20px; 
     margin-top: 60px;
     background-color: #b7a99e;
-    display: flex; /* Change display to flex */
-    flex-wrap: wrap; /* Allow project boxes to wrap */
-    justify-content: space-between; /* Distribute evenly */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
 }
 
 .project-box {
-    width: calc(33% - 20px); /* Adjust width based on desired number of items per row */
-    margin-bottom: 20px; /* Add some space between project boxes */
+    width: calc(33% - 20px); 
+    margin-bottom: 20px; 
     position: relative;
     overflow: hidden;
     border-radius: 20px;
