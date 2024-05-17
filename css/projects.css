@@ -38,7 +38,6 @@ body {
 
 .navbar a:hover {
     background-color: #857d7d;
-    font-size: 20px;
 }
 
 .navbar a.active {
@@ -63,29 +62,41 @@ p {
     color: #654f3a;
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 70px; /* Adjust this value to fit your layout */
+}
+
 .title-section {
-    width: 35%;
+    flex: 0 0 30%;
+    text-align: center;
+    color: #654f3a;
     margin-top: 40px;
     margin-left: 60px;
 }
 
 .project-section {
+    flex: 0 0 60%;
+    padding: 15px;
     width: 65%;
-    padding: 100px; 
     margin-top: 60px;
     background-color: #b7a99e;
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto; /* Adjust margin to center the section */
+    margin-right: auto; /* Adjust margin to center the section */
 }
 
 .empty-space {
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
 }
 
 .project-box {
-    width: calc(33% - 20px); 
-    margin-bottom: 20px; 
+    width: calc(33% - 20px);
+    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
     border-radius: 20px;
@@ -96,23 +107,32 @@ p {
 .project-box img {
     width: 100%;
     height: auto;
-    border-radius: 20px; /* Apply border-radius to the image */
+    border-radius: 20px;
 }
 
 .project-box:hover {
-    transform: scale(1.1);
+    transform: scale(1.05); /* Slightly reduce the scale effect */
 }
 
-.title {
+.project-info {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 2px;
-    font-size: 12px;
+    padding: 10px; /* Adjusted padding for better spacing */
+    font-size: 14px; /* Slightly increased font size */
     font-weight: bold;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8); /* Make background slightly transparent */
+}
+
+.project-info a {
+    color: #654f3a; /* Match the overall color scheme */
+    text-decoration: none;
+}
+
+.project-info a:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
 @media only screen and (max-width: 600px) {
