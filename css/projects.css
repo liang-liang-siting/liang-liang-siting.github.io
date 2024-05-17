@@ -1,3 +1,5 @@
+/* styles.css */
+
 body {
     margin: 0;
     font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -86,9 +88,14 @@ p {
     justify-content: space-between; /* Distribute evenly */
 }
 
-.project-box {
+.project-container {
     width: calc(33% - 20px); /* Adjust width based on desired number of items per row */
-    margin-bottom: 20px; /* Add some space between project boxes */
+    margin-bottom: 20px; /* Add some space between project containers */
+    position: relative;
+}
+
+.project-box {
+    width: 100%;
     position: relative;
     overflow: hidden;
     border-radius: 20px;
@@ -116,60 +123,4 @@ p {
     font-size: 12px;
     font-weight: bold;
     background-color: white;
-}
-
-@media only screen and (max-width: 600px) {
-    .navbar {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: #b7a99e;
-        color: #8b7d71;
-        text-align: center;
-        padding: 15px;
-    }
-
-    .navbar-title {
-        display: none;
-    }
-
-    .navbar a {
-        color: white;
-        padding: 10px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        transition: background-color 0.3s;
-    }
-
-    .navbar a:hover {
-        background-color: #857d7d;
-        font-size: 16px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-        padding: 10px;
-    }
-
-    .title-section,
-    .project-section {
-        width: 100%;
-        background-color: #b7a99e;
-        padding: 20px;
-        border-radius: 20px;
-        margin-top: 10px;
-        margin-bottom: 100px;
-    }
-
-    .image {
-        width: 100%;
-        height: auto;
-    }
 }
