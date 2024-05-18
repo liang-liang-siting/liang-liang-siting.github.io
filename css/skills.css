@@ -108,9 +108,7 @@ ul {
         color: #8b7d71;
         text-align: center;
         padding: 15px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        z-index: 2;
     }
 
     .navbar-title {

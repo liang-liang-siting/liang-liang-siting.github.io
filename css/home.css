@@ -104,6 +104,36 @@ span {
     height: 85%;
 }
 
+.custom-cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.site-wide {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.site-wide .pointer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+    transition: width 0.1s ease-in-out, height 01.s ease-in-out;
+}
+
+.site-wide.active .pointer{
+    width: 20px;
+    height: 20px;
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -111,9 +141,6 @@ span {
         position: fixed;
         bottom: 0;
         width: 100%;
-        display: flex;
-        justify-content: space-around;
-        transition: background-color 0.3s;
         background-color: #b7a99e;
         color: #8b7d71;
         text-align: center;
