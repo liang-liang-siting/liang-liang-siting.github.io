@@ -182,4 +182,27 @@ p {
         width: 100%;
         height: auto;
     }
+
+    .project-box {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .project-info {
+        position: static; 
+        background-color: transparent; 
+        padding: 10px 0; 
+        font-size: 14px; 
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .project-info a {
+        color: #654f3a; 
+        text-decoration: none;
+    }
+
+    .project-info a:hover {
+        text-decoration: underline; 
+    }
 }
