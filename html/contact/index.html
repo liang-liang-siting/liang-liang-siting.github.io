@@ -16,6 +16,8 @@
     </div>
     <div class="empty-space"></div>
     <h1>Connect with me</h1>
+    <div id="text-container"></div>
+    <div class="empty-space"></div>
     <div class="empty-space"></div>
     <h2>Siting Liang</h2>
     <h3>liangst0721@gmail.com</h3>
@@ -31,5 +33,22 @@
             <img src="/image/github.jpg" akt="Github Icon">
         </a>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const text = "Always stay curious about the world and never lose the ability and courage to explore.";
+            const container = document.getElementById("text-container");
+            let index = 0;
+
+            function typeText() {
+                if (index < text.length) {
+                    container.textContent += text[index];
+                    index++;
+                    setTimeout(typeText, 100); 
+                }
+            }
+
+            typeText();
+        });
+    </script>
 </body>
 </html>
