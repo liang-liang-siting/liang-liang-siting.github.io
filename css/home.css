@@ -111,6 +111,9 @@ span {
         position: fixed;
         bottom: 0;
         width: 100%;
+        display: flex;
+        justify-content: space-around;
+        transition: background-color 0.3s;
         background-color: #b7a99e;
         color: #8b7d71;
         text-align: center;
@@ -140,6 +143,7 @@ span {
         display: inline-block;
         justify-content: space-between;
         align-items: center;
+        text-align: center;
     }
 
     h1 {
