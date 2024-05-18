@@ -69,25 +69,17 @@ p {
     padding-top: 120px; 
 }
 
-.title-section {
-    flex: 0 0 30%;
-    text-align: center;
-    color: #654f3a;
-    margin-top: 40px;
-    margin-left: 60px;
-}
-
 .project-section {
     flex: 0 0 60%;
     padding: 15px;
     width: 65%;
-    margin-top: 0;
+    margin-top: 50px;
     background-color: #b7a99e;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: auto; /* Adjust margin to center the section */
-    margin-right: auto; /* Adjust margin to center the section */
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 .empty-space {
@@ -111,7 +103,7 @@ p {
 }
 
 .project-box:hover {
-    transform: scale(1.05); /* Slightly reduce the scale effect */
+    transform: scale(1.05); 
 }
 
 .project-info {
@@ -120,19 +112,19 @@ p {
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 10px; /* Adjusted padding for better spacing */
-    font-size: 14px; /* Slightly increased font size */
+    padding: 10px; 
+    font-size: 14px; 
     font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.8); /* Make background slightly transparent */
+    background-color: rgba(255, 255, 255, 0.8); 
 }
 
 .project-info a {
-    color: #654f3a; /* Match the overall color scheme */
+    color: #654f3a; 
     text-decoration: none;
 }
 
 .project-info a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline; 
 }
 
 @media only screen and (max-width: 600px) {
